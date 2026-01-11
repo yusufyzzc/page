@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>yusuf's page</title>
+  <style>
+    body{
+      font-family: serif, sans-serif;
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#f3f6fb;
+    }
+    .card{
+      width:min(800px, 500vw);
+      background:#fff;
+      border-radius:20px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      text-align:center;
+    }
+    h1{ margin:0 0 10px; font-size:24px; }
+    p{ margin:0 0 18px; color:#444; }
+    .row{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+    button{
+      border:0;
+      padding:12px 16px;
+      border-radius:10px;
+      font-weight:700;
+      cursor:pointer;
+      min-width:180px;
+      box-shadow:0 6px 14px rgba(0,0,0,.10);
+    }
+    .btn1{ background:#ff3b30; color:white; }
+    .btn2{ background:#007aff; color:white; }
+    button:active{ transform: translateY(1px); }
+    .small{
+      margin-top:18px;
+      font-size:12px;
+      color:#666;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>WELCOME TO MY PAGE / HOŞGELGİNİZ</h1>
+    <p>HAPI SEÇ!</p>
+
+    <div class="row">
+      <button class="btn1" id="btnHelp">RED PILL</button>
+      <button class="btn2" id="btnDocs">BLUE PILL</button>
+    </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Buradaki linkleri istediğin gibi değiştir
+    const url1 = "https://tr.pinterest.com/pin/nah-eken-day--385198574397343173/";
+    const url2 = "https://docs.google.com/document/d/1vEPGxtAFJVuPp_0B19rw3T119fkZGDfJnizYV0XuLvA/edit?usp=sharing";
+
+    document.getElementById("btnHelp").addEventListener("click", () => {
+      window.open(url1, "_blank", "noopener,noreferrer");
+    });
+
+    document.getElementById("btnDocs").addEventListener("click", () => {
+      window.open(url2, "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
